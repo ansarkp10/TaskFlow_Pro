@@ -1,5 +1,29 @@
-````md id="r9x3la"
 # TaskFlow Pro
+
+# Application Screenshots
+
+## Login Page
+
+![Login](./screenshots/login.png)
+
+---
+
+## Dashboard Page
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## Projects Page
+
+![Projects](./screenshots/projects.png)
+
+---
+
+## Tasks Page
+
+![Tasks](./screenshots/tasks.png)
+
 
 TaskFlow Pro is a full-stack task management application built using:
 
@@ -345,5 +369,4 @@ Backend:
 
 K ANSAR
 
-```
-```
+
