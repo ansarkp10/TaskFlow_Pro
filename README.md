@@ -1,7 +1,5 @@
 # TaskFlow Pro
 
-# Application Screenshots
-
 ## Login Page
 
 ![Login](./screenshots/login.png)
