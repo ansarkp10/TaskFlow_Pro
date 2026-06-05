@@ -81,23 +81,6 @@ Database:
 
 ---
 
-# ER Diagram
-
-Users
-│
-├── Projects
-│     └── created_by → users.id
-│
-└── Tasks
-      └── assigned_to → users.id
-
-Projects
-│
-└── Tasks
-      └── project_id → projects.id
-
----
-
 # Database Design
 
 ## Users
