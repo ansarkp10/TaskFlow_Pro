@@ -1,0 +1,87 @@
+{
+  "info": {
+    "name": "TaskFlow Pro APIs",
+    "_postman_id": "taskflow-pro-collection",
+    "description": "TaskFlow Pro API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"siraj@gmail.com\",\n  \"password\": \"123456\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/auth/login",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Create Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaXJhakBnbWFpbC5jb20iLCJleHAiOjE3ODA2MjUxMzJ9.yv6vfij6rwVYJYTKtitY9qpjZFYPo4vOpkDDK_JknuE"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Ecommerce App\",\n  \"description\": \"Online shopping platform\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/projects/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["projects", ""]
+        }
+      }
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer YOUR_TOKEN"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Build Login API\",\n  \"description\": \"Implement JWT auth\",\n  \"status\": \"pending\",\n  \"project_id\": 1,\n  \"assigned_to\": 1,\n  \"due_date\": \"2026-06-10\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/tasks/",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["tasks", ""]
+        }
+      }
+    }
+  ]
+}
