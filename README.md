@@ -213,8 +213,8 @@ POST `/auth/register`
 
 ```json
 {
-  "name": "Siraj",
-  "email": "siraj@gmail.com",
+  "name": "Ansar",
+  "email": "ansar@gmail.com",
   "password": "123456",
   "role": "developer"
 }
@@ -228,7 +228,7 @@ POST `/auth/login`
 
 ```json
 {
-  "email": "siraj@gmail.com",
+  "email": "ansar@gmail.com",
   "password": "123456"
 }
 ```
